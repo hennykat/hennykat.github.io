@@ -2,8 +2,37 @@ body {
 	font-family: 'Ubuntu', sans-serif;
   color: #DEB841;
   background-color: #282828;
+  padding-left: 0rem;
+}
+
+section {
   padding-top: 5rem;
-  padding-left: 15rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #DEB841;
+}
+
+p {
+  color: #E5E5E5;
+}
+
+a {
+  color: #DDBE5F;
+}
+
+a:hover {
+  color: #E5E5E5;
+}
+
+li {
+  color: #E5E5E5;
+}
+
+.linkIcon {
+  padding-right: 4px;
+}
+
+.sectionTitle {
+  padding-bottom: 1rem;
 }
 
 #leftNav {
@@ -20,6 +49,10 @@ body {
 
 /* large devices */
 @media (min-width: 992px) {
+
+  body {
+    padding-left: 15rem;
+  }
 
   #leftNav {
     text-align: center;
