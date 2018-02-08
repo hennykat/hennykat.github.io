@@ -31,6 +31,10 @@ li {
   padding-right: 4px;
 }
 
+.linkIcon:hover {
+  text-decoration: none;
+}
+
 .sectionTitle {
   padding-bottom: 1rem;
 }
