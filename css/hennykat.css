@@ -3,11 +3,13 @@ body {
   color: #DEB841;
   background-color: #282828;
   padding-left: 0rem;
+  height: 100%;
+  overflow: hidden;
 }
 
 section {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   border-bottom: 1px solid #DEB841;
 }
 
@@ -25,6 +27,17 @@ a:hover {
 
 li {
   color: #E5E5E5;
+}
+
+#mainContent {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+#contact {
+  border-bottom: none;
 }
 
 .linkIcon {
@@ -54,7 +67,7 @@ li {
 /* large devices */
 @media (min-width: 992px) {
 
-  body {
+  #mainContent {
     padding-left: 18rem;
     padding-right: 4rem;
   }
@@ -79,26 +92,23 @@ li {
     transform-origin: left right;
   }
 
-  #lightSlight {
+  #outSlight {
     background-color: #DEB841;
     height: 100%;
     width: 14rem;
     position: fixed;
     top: 0;
-    left: 0;
-    padding-top: 5rem;
     transform: skewX(6deg);
     transform-origin: left right;
   }
 
-  #darkSlight {
+  #inSlight {
     background-color: #E5E5E5;
     height: 100%;
     width: 10rem;
     position: fixed;
     top: 0;
     left: 2rem;
-    padding-top: 5rem;
     transform: skewX(6deg);
     transform-origin: left right;
   }
